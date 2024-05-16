@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login - Register</title>
+</head>
+<body>
+    <div class="container">
+        <form id="login-form" onsubmit="login(event)">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="button">Login</button>
+            </div>
+        </form>
+
+        <form id="singup-form" style="display: none;" onsubmit="singup(event)">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="new-username">Username</label>
+                <input type="text" id="new-username" name="new-username" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">Password</label>
+                <input type="password" id="new-password" name="new-password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+
+        <div class="toggle-link">
+            <a href="#" id="toggle-form">Create an account</a>
+        </div>
+    </div>
+
+    <div class="toggle-night-mode" onclick="toggleNightMode()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
